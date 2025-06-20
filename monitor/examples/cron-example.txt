@@ -1,0 +1,14 @@
+# Example cron jobs for system monitoring
+
+# Run system monitor for 1 hour every 4 hours
+0 */4 * * * /path/to/monitor/system-logger.sh -d 3600 >/dev/null 2>&1
+
+# Generate daily reports at midnight
+0 0 * * * /path/to/monitor/scripts/generate-report.sh >/dev/null 2>&1
+
+# Weekly cleanup on Sunday at 2 AM
+0 2 * * 0 /path/to/monitor/scripts/cleanup.sh >/dev/null 2>&1
+
+# Continuous monitoring with systemd (preferred method)
+# sudo systemctl enable system-monitor
+# sudo systemctl start system-monitor
