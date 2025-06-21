@@ -78,3 +78,14 @@ This repository is licensed under the [MIT License](LICENSE).
 
 ---
 
+# Step 1: Add your hosts to a file
+echo -e "google.com\n192.168.1.1" > hosts.txt
+
+# Step 2: Run the script manually
+bash network/uptime-watcher.sh -f hosts.txt -i 5 --log
+
+# Step 3: OR add it as a cron job for continuous background monitoring
+crontab -e
+# Add:
+*/5 * * * * /path/to/uptime-watcher.sh -f /path/to/hosts.txt --silent --log
+
