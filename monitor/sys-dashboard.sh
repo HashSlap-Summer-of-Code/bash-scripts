@@ -3,7 +3,6 @@
 # sys-dashboard.sh — Interactive terminal-based system info dashboard
 #
 # Author: Surge77
-# License: MIT (see LICENSE file)# Location: monitor/sys-dashboard.sh
 #
 # Description:
 #   This script displays a neatly formatted summary of your system's status.
