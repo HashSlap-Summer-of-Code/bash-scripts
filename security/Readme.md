@@ -116,3 +116,5 @@ security/folder-encryptor.sh
 ## ✍️ Author
 
 [Surge77](https://github.com/Surge77)  — Contributed for HashSlap Summer of Code (HSSoC)
+
+
